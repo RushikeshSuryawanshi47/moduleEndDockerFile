@@ -1,0 +1,70 @@
+* Employee Recruitment System - Software Requirements Specification 
+1. Introduction
+The purpose of this document is to outline the requirements for the development of an employee recruitment system. 
+The system aims to streamline the recruitment process, automate administrative tasks, and provide efficient management of job postings, applicant profiles, and hiring workflows.
+
+2. System Overview
+The employee recruitment system will include the following key features:
+
+Job posting management
+Applicant tracking and management
+Resume parsing and analysis
+Candidate evaluation and assessment
+Interview scheduling and management
+Reporting and analytics
+Integration with HR systems and external job portals
+3. User Requirements
+The employee recruitment system shall support the following user roles and corresponding functionalities:
+
+HR Manager/Admin:
+Manage job postings and applicant profiles
+Review, shortlist, and evaluate candidates
+Schedule and conduct interviews
+Make hiring decisions and extend job offers
+Hiring Team Member:
+View job postings and applicant profiles
+Participate in candidate evaluation and assessment
+Provide feedback on candidates
+Applicant:
+Create and update applicant profiles
+Search and apply for job openings
+View application status and receive notifications
+4. Functional Requirements
+4.1 Job Posting Management
+
+HR managers/admins shall be able to create, edit, and manage job postings.
+Job postings shall include details such as job title, description, requirements, location, and application deadlines.
+HR managers/admins shall have the ability to publish, unpublish, or remove job postings.
+4.2 Applicant Tracking and Management
+
+Applicants shall be able to create and update their profiles, including personal information, work experience, education, and skills.
+The system shall store applicant profiles and allow HR managers/admins to search, view, and manage applicant data.
+HR managers/admins shall be able to track the status of each applicant (e.g., new, shortlisted, interviewed, hired).
+4.3 Resume Parsing and Analysis
+
+The system shall support the parsing and extraction of relevant information from applicant resumes.
+Parsed data, such as education, work experience, and skills, shall be automatically populated into applicant profiles.
+HR managers/admins shall be able to search and filter applicants based on parsed data.
+4.4 Candidate Evaluation and Assessment
+
+HR managers/admins and hiring team members shall be able to evaluate and assess candidates based on predefined criteria.
+Evaluation criteria may include qualifications, experience, skills, and interview performance.
+The system shall provide a scoring mechanism to assess candidates objectively.
+4.5 Interview Scheduling and Management
+
+HR managers/admins shall be able to schedule interviews and manage interview slots.
+Applicants and hiring team members shall receive notifications about interview schedules and updates.
+Interview feedback and evaluation results shall be recorded in the system.
+4.6 Reporting and Analytics
+
+The system shall generate reports on recruitment metrics, such as the number of applications, applicant demographics, hiring ratios, etc.
+HR managers/admins shall be able to analyze recruitment data and export reports.
+4.7 Integration
+
+The system shall integrate with HR systems (e.g., payroll, employee management) to synchronize employee data after successful hiring.
+Integration with external job portals or career websites shall allow job postings to be automatically synced.
+5. Non-Functional Requirements
+The system shall have a user-friendly and intuitive interface for both HR managers/admins and applicants.
+The system shall be accessible from different web browsers and devices.
+The system shall ensure the security of applicant data and implement appropriate authentication and authorization mechanisms.
+The system shall be scalable to handle a large number of job postings, applicants
