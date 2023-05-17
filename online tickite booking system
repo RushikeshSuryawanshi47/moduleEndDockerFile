@@ -72,3 +72,120 @@ The system shall be accessible from popular web browsers.
 The system shall handle a large number of concurrent users without performance degradation.
 The system shall ensure the security of user data, including personal and payment information.
 The system shall provide
+
+                +-------------------------+
+                |        Ticket           |
+                +-------------------------+
+                | ticket_id (PK)          |
+                | event_id (FK)           |
+                | user_id (FK)            |
+                | seat_id (FK)            |
+                | purchase_date           |
+                | status                  |
+                +-------------------------+
+
+                 |
+                 |
+                 |1
+        +--------+---------+
+        |      Event       |
+        +------------------+
+        | event_id (PK)    |
+        | event_name       |
+        | event_date       |
+        | event_location   |
+        +------------------+
+
+                 |
+                 |
+                 |1
+        +--------+---------+
+        |      User        |
+        +------------------+
+        | user_id (PK)     |
+        | username         |
+        | password         |
+        | email            |
+        | name             |
+        | address          |
+        +------------------+
+
+                 |
+                 |
+              1..*
+        +--------+---------+
+        |      Seat        |
+        +------------------+
+        | seat_id (PK)     |
+        | seat_number      |
+        | event_id (FK)    |
+        | is_available     |
+        +------------------+
+
+
+Certainly! Here is a simplified ER diagram for an online ticket booking system:
+
+lua
+Copy code
+                +-------------------------+
+                |        Ticket           |
+                +-------------------------+
+                | ticket_id (PK)          |
+                | event_id (FK)           |
+                | user_id (FK)            |
+                | seat_id (FK)            |
+                | purchase_date           |
+                | status                  |
+                +-------------------------+
+
+                 |
+                 |
+                 |1
+        +--------+---------+
+        |      Event       |
+        +------------------+
+        | event_id (PK)    |
+        | event_name       |
+        | event_date       |
+        | event_location   |
+        +------------------+
+
+                 |
+                 |
+                 |1
+        +--------+---------+
+        |      User        |
+        +------------------+
+        | user_id (PK)     |
+        | username         |
+        | password         |
+        | email            |
+        | name             |
+        | address          |
+        +------------------+
+
+                 |
+                 |
+              1..*
+        +--------+---------+
+        |      Seat        |
+        +------------------+
+        | seat_id (PK)     |
+        | seat_number      |
+        | event_id (FK)    |
+        | is_available     |
+        +------------------+
+Explanation:
+
+The "Ticket" entity represents a ticket booked by a user for a specific event and seat.
+It includes information such as ticket ID, event ID, user ID, seat ID, purchase date, and status.
+The "Event" entity represents an event for which tickets can be booked. It includes details such as event ID, event name, event date, and event location.
+The "User" entity represents a user of the online ticket booking system. It includes user ID, username, password, email, name, and address.
+The "Seat" entity represents a seat available for booking in an event. It includes seat ID, seat number, event ID, and availability status.
+The relationships between the entities are as follows:
+
+Each ticket is associated with one event, and each event can have multiple tickets (one-to-many relationship: Event to Ticket).
+Each ticket is associated with one user, and each user can have multiple tickets (one-to-many relationship: User to Ticket).
+Each seat is associated with one event, and each event can have multiple seats (one-to-many relationship: Event to Seat).
+Please note that this is a basic representation, and in a real-world scenario, 
+there might be additional entities and relationships based on the specific requirements of the online ticket booking system.
