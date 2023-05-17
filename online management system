@@ -73,3 +73,51 @@ The online
 
 
 
+                       +-----------------+
+                       |     User        |
+                       +-----------------+
+                       |  UserId (PK)    |
+                       |  Name           |
+                       |  Email          |
+                       |  Password       |
+                       +--------+--------+
+                                |
+                                |
+                                |
+                      +---------+---------+
+                      |   Project        |
+                      +---------+---------+
+                      |  ProjectId (PK)  |
+                      |  Name           |
+                      |  Description    |
+                      |  StartDate      |
+                      |  EndDate        |
+                      +---------+---------+
+                                |
+                                |
+                                |
+                      +---------+---------+
+                      |      Task        |
+                      +---------+---------+
+                      |  TaskId (PK)     |
+                      |  Name           |
+                      |  Description    |
+                      |  DueDate        |
+                      |  Status         |
+                      |  ProjectId (FK) |
+                      +---------+---------+
+                                |
+                                |
+                                |
+                      +---------+---------+
+                      |     Resource     |
+                      +---------+---------+
+                      |  ResourceId (PK) |
+                      |  Name           |
+                      |  Type           |
+                      |  ProjectId (FK) |
+                      +---------+---------+
+
+
+
+
