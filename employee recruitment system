@@ -68,3 +68,50 @@ The system shall have a user-friendly and intuitive interface for both HR manage
 The system shall be accessible from different web browsers and devices.
 The system shall ensure the security of applicant data and implement appropriate authentication and authorization mechanisms.
 The system shall be scalable to handle a large number of job postings, applicants
+
+               +-------------------------+
+               |         Employee        |
+               +-------------------------+
+               | employee_id (PK)        |
+               | first_name              |
+               | last_name               |
+               | email                   |
+               | phone_number            |
+               | address                 |
+               | resume_file             |
+               +-------------------------+
+                     |
+                     |
+                  1..*
+       +------------+------------+
+       |      Job Vacancy        |
+       +-------------------------+
+       | vacancy_id (PK)         |
+       | position                |
+       | department              |
+       | description             |
+       | requirements            |
+       +-------------------------+
+                     |
+                     |
+                  1..*
+       +------------+------------+
+       |    Job Application      |
+       +-------------------------+
+       | application_id (PK)     |
+       | vacancy_id (FK)         |
+       | employee_id (FK)        |
+       | application_date        |
+       | status                  |
+       +-------------------------+
+
+Explanation:
+
+1)The "Employee" entity represents job applicants who are interested in the job vacancies. It includes attributes such as employee ID, first name, last name, email, phone number, address, and resume file.
+2)The "Job Vacancy" entity represents the available job positions. It includes attributes such as vacancy ID, position, department, description, and requirements.
+3)The "Job Application" entity represents the applications submitted by employees for specific job vacancies. It includes attributes such as application ID, vacancy ID (foreign key), employee ID (foreign key), application date, and status.
+The relationships between the entities are as follows:
+
+Each employee can submit multiple job applications, but each job application is associated with only one employee (one-to-many relationship: Employee to Job Application).
+Each job vacancy can have multiple job applications, but each job application is associated with only one job vacancy (one-to-many relationship: Job Vacancy to Job Application).
+Please note that this is a basic representation, and in a real-world scenario, there might be additional entities and relationships based on the specific requirements of the employee recruitment system.
