@@ -67,3 +67,60 @@ The portal shall have a user-friendly and intuitive interface for easy navigatio
 The portal shall be accessible from different web browsers and devices.
 The system shall ensure the security of user data, including personal and financial information.
 The portal shall be scalable to accommodate a
+
+
+                 +-------------------------+
+                 |         Farmer          |
+                 +-------------------------+
+                 | farmer_id (PK)          |
+                 | name                    |
+                 | contact_number          |
+                 | address                 |
+                 | pin_code                |
+                 +-------------------------+
+                       |
+                       |
+                       |1
+          +------------+------------+
+          |      Krushi Seva Kendra |
+          +-------------------------+
+          | kendra_id (PK)          |
+          | name                    |
+          | location                |
+          | contact_number          |
+          +-------------------------+
+                       |
+                       |
+                    1..*
+          +------------+------------+
+          |       Advisory Service   |
+          +-------------------------+
+          | service_id (PK)         |
+          | description             |
+          | kendra_id (FK)          |
+          +-------------------------+
+                       |
+                       |
+                    1..*
+          +------------+------------+
+          |        Crop              |
+          +-------------------------+
+          | crop_id (PK)             |
+          | name                    |
+          | description             |
+          | advisory_service_id (FK)|
+          +-------------------------+
+Explanation:
+
+1)The "Farmer" entity represents the farmers who seek services from the Krushi Seva Kendra.
+It includes attributes such as farmer ID, name, contact number, address, and pin code.
+2)The "Krushi Seva Kendra" entity represents the agricultural service center. It includes attributes like Kendra ID, name, location, and contact number.
+3)The "Advisory Service" entity represents the specific advisory services provided by the Krushi Seva Kendra. 
+It includes attributes such as service ID, description, and Kendra ID (foreign key).
+4)The "Crop" entity represents the crops for which advisory services are provided. 
+It includes attributes such as crop ID, name, description, and advisory service ID (foreign key).
+ The relationships between the entities are as follows:
+
+Each farmer can be associated with only one Krushi Seva Kendra, but a Kendra can serve multiple farmers (one-to-many relationship: Krushi Seva Kendra to Farmer).
+Each Krushi Seva Kendra can offer multiple advisory services, but an advisory service is associated with only one Kendra (one-to-many relationship: Krushi Seva Kendra to Advisory Service).
+Each advisory service can cover multiple crops, but a crop is associated with only one advisory service (one-to-many relationship: Advisory Service to Crop).
