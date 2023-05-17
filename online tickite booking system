@@ -1,0 +1,74 @@
+Online Ticket Booking System - Software Requirements Specification
+1. Introduction
+The purpose of this document is to outline the requirements for the development of an online ticket booking system. 
+The system aims to provide users with a convenient platform to browse, select, and book tickets for various events, 
+such as movies, concerts, sports matches, and other entertainment activities.
+
+2. System Overview
+The online ticket booking system will include the following key features:
+
+User registration and authentication
+Event listing and categorization
+Seat selection and reservation
+Payment processing
+Booking confirmation and ticket generation
+User reviews and ratings
+Integration with third-party services (e.g., payment gateways)
+3. User Requirements
+The online ticket booking system shall support the following user roles and corresponding functionalities:
+
+Guest:
+Browse event listings
+View event details and availability
+Register and create a user account
+Registered User:
+Perform all guest functionalities
+Log in to the system
+Book tickets
+Make payments
+View booking history and ticket details
+Administrator:
+Manage event listings (add, edit, delete)
+Manage user accounts and permissions
+Generate reports and analytics
+4. Functional Requirements
+4.1 User Registration and Authentication
+
+Users shall be able to register for an account by providing necessary information (e.g., name, email address, password).
+The system shall validate user credentials during registration and provide appropriate feedback.
+Registered users shall be able to log in to the system using their credentials.
+4.2 Event Listing and Categorization
+
+The system shall provide a comprehensive list of events, including movies, concerts, sports matches, and other entertainment activities.
+Events shall be categorized based on genres, locations, dates, and other relevant criteria.
+Users shall be able to search and filter events based on their preferences.
+4.3 Seat Selection and Reservation
+
+Users shall be able to select seats for the desired event.
+The system shall display an interactive seating layout and highlight available seats.
+Users shall have the option to choose multiple seats based on availability.
+Selected seats shall be temporarily reserved to prevent double bookings during the payment process.
+4.4 Payment Processing
+
+The system shall integrate with a secure and reliable payment gateway to process ticket payments.
+Users shall be able to choose from various payment methods (e.g., credit/debit cards, online wallets).
+The system shall handle payment transactions securely and provide confirmation to users upon successful payment.
+4.5 Booking Confirmation and Ticket Generation
+
+Users shall receive a booking confirmation with the details of their ticket purchase.
+The system shall generate electronic tickets in a printable or downloadable format.
+Users shall be able to view and access their tickets through their account.
+4.6 User Reviews and Ratings
+
+Users shall be able to provide reviews and ratings for events they have attended.
+Reviews and ratings shall be displayed on event pages to assist other users in their decision-making process.
+4.7 Integration with Third-Party Services
+
+The system shall integrate with third-party services, such as payment gateways, to facilitate secure transactions.
+Integration with notification services (e.g., email, SMS) shall allow users to receive booking confirmations and updates.
+5. Non-Functional Requirements
+The system shall have a user-friendly and responsive interface for seamless user experience across different devices.
+The system shall be accessible from popular web browsers.
+The system shall handle a large number of concurrent users without performance degradation.
+The system shall ensure the security of user data, including personal and payment information.
+The system shall provide
